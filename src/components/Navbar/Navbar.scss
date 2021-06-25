@@ -1,0 +1,34 @@
+@mixin fullHeightWidth {
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	height: 4.5rem;
+	padding: 1.5rem 1.5rem;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	position: relative;
+	transition: 0.5s all ease-in-out;
+}
+
+.navbar-desktop {
+	&__list {
+		display: flex;
+		list-style-type: none;
+		li {
+			margin-right: 2.3125rem;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-mobile {
+		display: none;
+	}
+
+	.navbar-desktop {
+		display: flex;
+	}
+}
