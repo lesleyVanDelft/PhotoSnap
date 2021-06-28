@@ -13,14 +13,41 @@
 	transition: 0.5s all ease-in-out;
 }
 
+.logo {
+	margin: 0;
+}
+
 .navbar-desktop {
 	&__list {
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		list-style-type: none;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin: 0;
+		font-size: 0.75rem;
 		li {
 			margin-right: 2.3125rem;
 		}
 	}
+}
+
+.hamburgerToggle,
+.close {
+	margin: 0;
+}
+
+.buttonBlackDesktop {
+	padding: 0.6rem 2rem;
+	border: none;
+	font-size: 0.75rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	background: #000;
+	color: #fff;
 }
 
 @media screen and (min-width: 768px) {

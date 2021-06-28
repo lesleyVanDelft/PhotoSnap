@@ -8,7 +8,7 @@ const MobileMenu = props => {
 				<li>Features</li>
 				<li>Pricing</li>
 			</ul>
-			<button className="buttonBlack">Get an invite</button>
+			<button className="buttonBlackMobile">Get an invite</button>
 		</div>
 	);
 };

@@ -4,7 +4,6 @@ import hamburger from '../../assets/shared/mobile/menu.svg';
 import close from '../../assets/shared/mobile/close.svg';
 import './Navbar.css';
 import MobileMenu from './MobileMenu/MobileMenu';
-import ButtonBlack from '../Buttons/ButtonBlack';
 import { useMediaQuery } from 'react-responsive';
 
 const Navbar = () => {
@@ -51,12 +50,13 @@ const Navbar = () => {
 					<figure className="logo">
 						<img src={logo} alt="" />
 					</figure>
+
 					<ul className="navbar-desktop__list">
 						<li>Stories</li>
 						<li>Features</li>
 						<li>Pricing</li>
-						<button>hello</button>
 					</ul>
+					<button className="buttonBlackDesktop">Get an invite</button>
 				</nav>
 			)}
 		</>

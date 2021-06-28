@@ -1,7 +1,7 @@
 import './buttonBlack.css';
 
 const ButtonBlack = () => {
-	return <button className="buttonBlack"></button>;
+	return <button className={'rsfdfds'}></button>;
 };
 
 export default ButtonBlack;
