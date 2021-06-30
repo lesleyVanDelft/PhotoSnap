@@ -11,3 +11,26 @@
 .btn-black {
 	background: orange;
 }
+
+button {
+	border: none;
+}
+
+.btnTransparentWhite {
+	// border: none;
+	background: black;
+	color: #fff;
+
+	svg {
+		margin-left: 1rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		font-family: 'DM Sans', sans-serif;
+		font-size: 0.75rem;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}

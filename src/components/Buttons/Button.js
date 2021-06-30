@@ -1,7 +1,6 @@
 import './Button.css';
-import { Link } from 'react-router-dom';
 
-const STYLES = ['btn-primary', 'btn-outline'];
+const STYLES = ['btnTransparentWhite', 'btnTransparentBlack'];
 const SIZES = ['btn-medium', 'btn-large'];
 
 export const Button = ({ buttonStyle, buttonSize, children, onClick }) => {
@@ -12,12 +11,10 @@ export const Button = ({ buttonStyle, buttonSize, children, onClick }) => {
 	const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
 	return (
-		<Link to="/">
-			<button
-				className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-				onClick={onClick}>
-				{children}
-			</button>
-		</Link>
+		<button
+			className={`${checkButtonStyle} ${checkButtonSize}`}
+			onClick={onClick}>
+			{children}
+		</button>
 	);
 };
