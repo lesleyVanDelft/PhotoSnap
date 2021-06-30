@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 import hamburger from '../../assets/shared/mobile/menu.svg';
 import close from '../../assets/shared/mobile/close.svg';
@@ -52,9 +53,9 @@ const Navbar = () => {
 					</figure>
 
 					<ul className="navbar-desktop__list">
-						<li>Stories</li>
-						<li>Features</li>
-						<li>Pricing</li>
+						<Link to="/stories">Stories</Link>
+						<Link to="/features">Features</Link>
+						<Link to="/pricing">Pricing</Link>
 					</ul>
 					<button className="buttonBlackDesktop">Get an invite</button>
 				</nav>
