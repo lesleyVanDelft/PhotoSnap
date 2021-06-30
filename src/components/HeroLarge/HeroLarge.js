@@ -1,13 +1,13 @@
 import './HeroLarge.css';
 import { Button } from '../Buttons/Button';
 
-const HeroLarge = ({ children, heading, body, className }) => {
+const HeroLarge = ({ children, heading, body, classColor }) => {
 	return (
-		<article className="heroLarge">
+		<article className={`heroLarge ${classColor}`}>
 			<h2 className="heroLarge__heading">{heading}</h2>
 			<p className="heroLarge__content">{body}</p>
 			{/* <button className={className}>{children}</button> */}
-			<Button className={className}>{children}</Button>
+			<Button>{children}</Button>
 		</article>
 	);
 };
