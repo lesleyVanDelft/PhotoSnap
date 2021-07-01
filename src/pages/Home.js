@@ -1,8 +1,12 @@
 import Navbar from '../components/Navbar/Navbar';
 import HeroSmall from '../components/HeroSmall/HeroSmall';
 import HeroLarge from '../components/HeroLarge/HeroLarge';
-import content from '../data';
+import { content } from '../data';
 import Arrow from '../components/Arrow';
+import ArrowBlack from '../components/ArrowBlack';
+import Card from '../components/Card/Card';
+import FeaturesCard from '../components/FeaturesCard/FeaturesCard';
+import Footer from '../components/Footer/Footer';
 import './Home.css';
 
 const Home = () => {
@@ -21,8 +25,22 @@ const Home = () => {
 				heading={content.content2.title}
 				body={content.content2.body}>
 				<a href="/">Get an invite</a>
-				<Arrow />
+				<ArrowBlack />
 			</HeroLarge>
+
+			<HeroSmall src="/images/home/homeMobile/designed-for-everyone.jpg" />
+			<HeroLarge
+				classColor="white"
+				heading={content.content3.title}
+				body={content.content3.body}>
+				<a href="/">Get an invite</a>
+				<ArrowBlack />
+			</HeroLarge>
+
+			<Card amount={4} />
+			<FeaturesCard amount={3} />
+
+			<Footer />
 		</section>
 	);
 };
