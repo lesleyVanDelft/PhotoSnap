@@ -12,51 +12,27 @@ import { useMediaQuery } from 'react-responsive';
 import './Home.css';
 
 const Home = () => {
-	// NPM media queries
-	// const tabletScreens = useMediaQuery({
-	// 	query: '(max-device-width: 1200px)',
-	// });
-	const tabletScreens2 = useMediaQuery({
-		query: '(min-device-width: 768px)',
+	// React media queries
+	const tabletScreens = useMediaQuery({
+		minWidth: 768,
+		maxWidth: 1200,
 	});
 	const desktopScreens = useMediaQuery({
-		query: '(min-device-width: 1200px',
+		minWidth: 1200,
 	});
 	const smScreens = useMediaQuery({
-		query: '(max-device-width: 768px)',
+		maxWidth: 768,
 	});
 
 	return (
 		<main className="homepage">
 			<Navbar />
 			<section className="row m-0 p-0 flex-row-reverse">
-				{/* {smScreens && (
-					<HeroSmall
-						// src={setImageSize}
-						src="/images/home/homeMobile/create-and-share.jpg"
-						columns="col-md-4"
-					/>
-				)}
-				{tabletScreens && tabletScreens2 && (
-					<HeroSmall
-						// src={setImageSize}
-						src="/images/home/homeTablet/create-and-share.jpg"
-						columns="col-md-4"
-					/>
-				)}
-				{desktopScreens && (
-					<HeroSmall
-						// src={setImageSize}
-						src="/images/home/homeDesktop/create-and-share.jpg"
-						columns="col-md-4 col-xl-7"
-					/>
-				)} */}
-
 				<HeroSmall
 					src={
-						(smScreens && '/images/home/homeMobile/create-and-share.jpg',
-						tabletScreens2 && '/images/home/homeTablet/create-and-share.jpg',
-						desktopScreens && '/images/home/homeDesktop/create-and-share.jpg')
+						(smScreens && '/images/home/homeMobile/create-and-share.jpg') ||
+						(tabletScreens && '/images/home/homeTablet/create-and-share.jpg') ||
+						(desktopScreens && '/images/home/homeDesktop/create-and-share.jpg')
 					}
 					columns="col-md-4 col-xl-7"
 				/>
@@ -73,13 +49,13 @@ const Home = () => {
 			<section className="row m-0 p-0">
 				<HeroSmall
 					src={
-						(smScreens && '/images/home/homeMobile/beautiful-stories.jpg',
-						tabletScreens2 && '/images/home/homeTablet/beautiful-stories.jpg',
-						desktopScreens && '/images/home/homeDesktop/beautiful-stories.jpg')
+						(smScreens && '/images/home/homeMobile/beautiful-stories.jpg') ||
+						(tabletScreens &&
+							'/images/home/homeTablet/beautiful-stories.jpg') ||
+						(desktopScreens && '/images/home/homeDesktop/beautiful-stories.jpg')
 					}
 					columns="col-md-4 col-xl-7"
 				/>
-				{/* <HeroSmall src="/images/home/homeMobile/beautiful-stories.jpg" /> */}
 				<HeroLarge
 					classColor="white"
 					heading={content.content2.title}
@@ -93,10 +69,11 @@ const Home = () => {
 			<section className="row m-0 p-0 flex-row-reverse">
 				<HeroSmall
 					src={
-						(smScreens && '/images/home/homeMobile/designed-for-everyone.jpg',
-						tabletScreens2 &&
-							'/images/home/homeTablet/designed-for-everyone.jpg',
-						desktopScreens &&
+						(smScreens &&
+							'/images/home/homeMobile/designed-for-everyone.jpg') ||
+						(tabletScreens &&
+							'/images/home/homeTablet/designed-for-everyone.jpg') ||
+						(desktopScreens &&
 							'/images/home/homeDesktop/designed-for-everyone.jpg')
 					}
 					columns="col-md-4 col-xl-7"
@@ -111,9 +88,13 @@ const Home = () => {
 				</HeroLarge>
 			</section>
 
-			<Card amount={4} />
+			<section className="row p-0 m-0">
+				<Card amount={4} />
+			</section>
 
-			<FeaturesCard amount={3} />
+			<section className="row p-0 m-0 mt-3 features">
+				<FeaturesCard amount={3} />
+			</section>
 
 			<Footer />
 		</main>

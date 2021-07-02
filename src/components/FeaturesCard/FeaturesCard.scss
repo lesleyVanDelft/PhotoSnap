@@ -1,9 +1,12 @@
 .FeaturesCard {
 	min-height: 14.75rem;
+	// width;
 	background-color: #fff;
 	font-family: 'DM Sans', sans-serif;
+	display: flex;
+
 	&:first-of-type {
-		margin-top: 4rem;
+		margin-top: 5rem;
 	}
 
 	&__content {
@@ -11,6 +14,7 @@
 		height: 100%;
 		width: 100%;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 		text-align: center;
 		padding: 1.5rem 2.5rem;
@@ -29,5 +33,41 @@
 	}
 	&__image {
 		margin-bottom: 3rem;
+	}
+}
+
+// .features {
+// display: flex;
+// height: 100%;
+// align-items: center;
+// justify-content: center;
+// }
+
+@media screen and (min-width: 768px) {
+	.FeaturesCard {
+		&__content {
+			p {
+				max-width: 45%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.FeaturesCard {
+		padding: 2rem 0rem;
+
+		&:first-of-type {
+			margin-top: 0rem;
+		}
+		&__content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			p {
+				max-width: 100%;
+			}
+		}
 	}
 }

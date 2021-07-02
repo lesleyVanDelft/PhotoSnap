@@ -1,8 +1,12 @@
 .Card {
-	height: 23.4375rem;
+	// height: 23.4375rem;
+	width: auto;
+	margin: 0;
+	padding: 0;
 	width: auto;
 	position: relative;
 	font-family: 'DM Sans', sans-serif;
+	flex: 100%;
 
 	&__image {
 		// position: absolute;
@@ -74,5 +78,17 @@
 			justify-content: space-between;
 			padding-top: 1rem;
 		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.Card {
+		flex: 50%;
+	}
+}
+
+@media screen and(min-width: 1100px) {
+	.Card {
+		flex: 25%;
 	}
 }

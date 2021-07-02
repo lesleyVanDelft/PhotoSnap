@@ -20,6 +20,7 @@ const stories = [
 		title: 'The Mountains',
 		date: 'April 16th 2020',
 		srcMobile: '/images/storiesMobile/1.jpg',
+		srcDesktop: '/images/storiesDesktop/1.jpg',
 	},
 	{
 		id: 2,
@@ -27,6 +28,7 @@ const stories = [
 		title: 'Sunset Cityscapes',
 		date: 'April 14th 2020',
 		srcMobile: '/images/storiesMobile/2.jpg',
+		srcDesktop: '/images/storiesDesktop/2.jpg',
 	},
 	{
 		id: 3,
@@ -34,6 +36,7 @@ const stories = [
 		title: '18 Days Voyage',
 		date: 'April 11th 2020',
 		srcMobile: '/images/storiesMobile/3.jpg',
+		srcDesktop: '/images/storiesDesktop/3.jpg',
 	},
 	{
 		id: 4,
@@ -41,6 +44,7 @@ const stories = [
 		title: 'Architecturals',
 		date: 'April 9th 2020',
 		srcMobile: '/images/storiesMobile/4.jpg',
+		srcDesktop: '/images/storiesDesktop/4.jpg',
 	},
 	{
 		id: 5,
@@ -48,6 +52,7 @@ const stories = [
 		title: 'World Tour 2019',
 		date: 'April 7th 2020',
 		srcMobile: '/images/storiesMobile/5.jpg',
+		srcDesktop: '/images/storiesDesktop/5.jpg',
 	},
 	{
 		id: 6,
@@ -55,6 +60,7 @@ const stories = [
 		title: 'Unforeseen Corners',
 		date: 'April 3rd 2020',
 		srcMobile: '/images/storiesMobile/6.jpg',
+		srcDesktop: '/images/storiesDesktop/6.jpg',
 	},
 	{
 		id: 7,
@@ -62,6 +68,7 @@ const stories = [
 		title: 'King in Africa: Part II',
 		date: 'March 29th 2020',
 		srcMobile: '/images/storiesMobile/7.jpg',
+		srcDesktop: '/images/storiesDesktop/7.jpg',
 	},
 	{
 		id: 8,
@@ -69,6 +76,7 @@ const stories = [
 		title: 'The Trip to Nowhere',
 		date: 'March 21st 2020',
 		srcMobile: '/images/storiesMobile/8.jpg',
+		srcDesktop: '/images/storiesDesktop/8.jpg',
 	},
 	{
 		id: 9,
@@ -76,6 +84,7 @@ const stories = [
 		title: 'Rage of The Sea',
 		date: 'March 19th 2020',
 		srcMobile: '/images/storiesMobile/9.jpg',
+		srcDesktop: '/images/storiesDesktop/9.jpg',
 	},
 	{
 		id: 10,
@@ -83,6 +92,7 @@ const stories = [
 		title: 'Running Free',
 		date: 'March 16th 2020',
 		srcMobile: '/images/storiesMobile/10.jpg',
+		srcDesktop: '/images/storiesDesktop/10.jpg',
 	},
 	{
 		id: 11,
@@ -90,6 +100,7 @@ const stories = [
 		title: 'Behind the Waves',
 		date: 'March 11th 2020',
 		srcMobile: '/images/storiesMobile/11.jpg',
+		srcDesktop: '/images/storiesDesktop/11.jpg',
 	},
 	{
 		id: 12,
@@ -97,6 +108,7 @@ const stories = [
 		title: 'Calm Waters',
 		date: 'March 9th 2020',
 		srcMobile: '/images/storiesMobile/12.jpg',
+		srcDesktop: '/images/storiesDesktop/12.jpg',
 	},
 	{
 		id: 13,
@@ -104,6 +116,7 @@ const stories = [
 		title: 'The Milky Way',
 		date: 'March 5th 2020',
 		srcMobile: '/images/storiesMobile/13.jpg',
+		srcDesktop: '/images/storiesDesktop/13.jpg',
 	},
 	{
 		id: 14,
@@ -111,6 +124,7 @@ const stories = [
 		title: 'Night at the Dark Forest',
 		date: 'March 4th 2020',
 		srcMobile: '/images/storiesMobile/14.jpg',
+		srcDesktop: '/images/storiesDesktop/14.jpg',
 	},
 	{
 		id: 15,
@@ -118,6 +132,7 @@ const stories = [
 		title: "Somwarpet's Beauty",
 		date: 'March 1st 2020',
 		srcMobile: '/images/storiesMobile/15.jpg',
+		srcDesktop: '/images/storiesDesktop/15.jpg',
 	},
 	{
 		id: 16,
@@ -125,6 +140,7 @@ const stories = [
 		title: 'Land of Dreams',
 		date: 'February 25th 2020',
 		srcMobile: '/images/storiesMobile/16.jpg',
+		srcDesktop: '/images/storiesDesktop/16.jpg',
 	},
 ];
 
