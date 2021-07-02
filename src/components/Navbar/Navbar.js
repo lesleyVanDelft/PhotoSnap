@@ -27,7 +27,9 @@ const Navbar = () => {
 			{smScreens && (
 				<nav className="navbar navbar-mobile">
 					<figure className="logo">
-						<img src={logo} alt="" />
+						<Link to="/">
+							<img src={logo} alt="" />
+						</Link>
 					</figure>
 
 					{isOpen || (
@@ -49,7 +51,9 @@ const Navbar = () => {
 			{bigScreens && (
 				<nav className="navbar navbar-desktop">
 					<figure className="logo">
-						<img src={logo} alt="" />
+						<Link to="/">
+							<img src={logo} alt="" />
+						</Link>
 					</figure>
 
 					<ul className="navbar-desktop__list">
