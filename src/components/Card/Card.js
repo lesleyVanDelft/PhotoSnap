@@ -7,8 +7,8 @@ const Card = props => {
 
 	return storiesHome.map(story => {
 		return (
-			<article className="Card" key={story.id}>
-				<div className="Card__content">
+			<article className="Card col-md-6 col-xl-3" key={story.id}>
+				<div className="Card__content ">
 					<div className="Card__content-text">
 						<h2 className="Card__title">{story.title}</h2>
 						<p className="Card__author">by {story.author}</p>
