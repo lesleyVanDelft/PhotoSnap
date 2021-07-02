@@ -13,9 +13,9 @@ import './Home.css';
 
 const Home = () => {
 	// NPM media queries
-	const tabletScreens = useMediaQuery({
-		query: '(max-device-width: 1200px)',
-	});
+	// const tabletScreens = useMediaQuery({
+	// 	query: '(max-device-width: 1200px)',
+	// });
 	const tabletScreens2 = useMediaQuery({
 		query: '(min-device-width: 768px)',
 	});
@@ -25,10 +25,6 @@ const Home = () => {
 	const smScreens = useMediaQuery({
 		query: '(max-device-width: 768px)',
 	});
-
-	// const setSize = () => {
-	// 	if(window.innerWidth)
-	// }
 
 	return (
 		<main className="homepage">
@@ -59,9 +55,7 @@ const Home = () => {
 				<HeroSmall
 					src={
 						(smScreens && '/images/home/homeMobile/create-and-share.jpg',
-						tabletScreens &&
-							tabletScreens2 &&
-							'/images/home/homeTablet/create-and-share.jpg',
+						tabletScreens2 && '/images/home/homeTablet/create-and-share.jpg',
 						desktopScreens && '/images/home/homeDesktop/create-and-share.jpg')
 					}
 					columns="col-md-4 col-xl-7"
@@ -80,9 +74,7 @@ const Home = () => {
 				<HeroSmall
 					src={
 						(smScreens && '/images/home/homeMobile/beautiful-stories.jpg',
-						tabletScreens &&
-							tabletScreens2 &&
-							'/images/home/homeTablet/beautiful-stories.jpg',
+						tabletScreens2 && '/images/home/homeTablet/beautiful-stories.jpg',
 						desktopScreens && '/images/home/homeDesktop/beautiful-stories.jpg')
 					}
 					columns="col-md-4 col-xl-7"
@@ -102,8 +94,7 @@ const Home = () => {
 				<HeroSmall
 					src={
 						(smScreens && '/images/home/homeMobile/designed-for-everyone.jpg',
-						tabletScreens &&
-							tabletScreens2 &&
+						tabletScreens2 &&
 							'/images/home/homeTablet/designed-for-everyone.jpg',
 						desktopScreens &&
 							'/images/home/homeDesktop/designed-for-everyone.jpg')
@@ -121,6 +112,7 @@ const Home = () => {
 			</section>
 
 			<Card amount={4} />
+
 			<FeaturesCard amount={3} />
 
 			<Footer />
