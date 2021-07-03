@@ -2,6 +2,10 @@ import { useMediaQuery } from 'react-responsive';
 import Navbar from '../components/Navbar/Navbar';
 import HeroXS from '../components/HeroXS/HeroXS';
 import HeroSmall from '../components/HeroSmall/HeroSmall';
+import FeaturesCard from '../components/FeaturesCard/FeaturesCard';
+import Beta from '../components/Beta/Beta';
+import Arrow from '../components/Arrow';
+import Footer from '../components/Footer/Footer';
 import './Features.css';
 
 const Features = () => {
@@ -38,6 +42,23 @@ const Features = () => {
 					columns={'col-md-8 col-xl-5'}
 				/>
 			</section>
+
+			<section className="row m-0 p-0">
+				<FeaturesCard amount={6} columns={'col-md-6 col-xl-4'} />
+			</section>
+			<div className="section">
+				<Beta
+					src={
+						(smScreens && '/images/beta/mobile/bg-beta.jpg') ||
+						(tabletScreens && '/images/beta/tablet/bg-beta.jpg') ||
+						(desktopScreens && '/images/beta/desktop/bg-beta.jpg')
+					}>
+					<a href="/" className="button">
+						Get and invite <Arrow />
+					</a>
+				</Beta>
+			</div>
+			<Footer />
 		</main>
 	);
 };

@@ -5,7 +5,7 @@ const FeaturesCard = props => {
 	const featuresHome = features.slice(0, `${props.amount}`);
 	return featuresHome.map(feature => {
 		return (
-			<section className="FeaturesCard col-xl-4" key={feature.id}>
+			<section className={`FeaturesCard ${props.columns}`} key={feature.id}>
 				<div className="FeaturesCard__content">
 					<figure className="FeaturesCard__image">
 						<img src={feature.src} alt="" />

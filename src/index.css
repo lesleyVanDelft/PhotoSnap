@@ -21,6 +21,20 @@ body {
 	padding: 0;
 }
 
+.generalButton {
+	background: none;
+	color: #fff;
+	font-size: 0.75rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.generalButton a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
 /* .row::before {
 	content: '';
 	position: absolute;
