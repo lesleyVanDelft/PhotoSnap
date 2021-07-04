@@ -1,8 +1,9 @@
 import { useMediaQuery } from 'react-responsive';
 import Navbar from '../components/Navbar/Navbar';
-import HeroLarge from '../components/HeroLarge/HeroLarge';
+// import HeroLarge from '../components/HeroLarge/HeroLarge';
 import HeroSmall from '../components/HeroSmall/HeroSmall';
 import HeroXS from '../components/HeroXS/HeroXS';
+import PricingCards from '../components/PricingCards/PricingCards';
 import './Pricing.css';
 
 const Pricing = () => {
@@ -37,6 +38,10 @@ const Pricing = () => {
 					}
 					columns={'col-md-8 col-xl-5'}
 				/>
+			</section>
+
+			<section className="row m-0 p-0">
+				<PricingCards />
 			</section>
 		</main>
 	);

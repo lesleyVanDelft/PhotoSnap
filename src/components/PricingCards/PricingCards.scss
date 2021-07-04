@@ -1,0 +1,89 @@
+.subscriptionToggle {
+	background: #fff;
+	width: 100%;
+
+	.checkbox {
+		font-family: 'DM Sans', sans-serif;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 3rem;
+
+		&__active {
+		}
+		&__muted {
+			opacity: 0.5;
+		}
+		&__monthly,
+		&__yearly {
+			font-size: 1.125rem;
+			font-weight: bold;
+			line-height: 25px;
+			color: #000;
+		}
+
+		.switch {
+			margin: 0 2rem;
+		}
+	}
+}
+
+// Checkbox toggle
+// the box around the slider
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 4rem;
+	height: 2rem;
+
+	// Hides default checkbox
+	input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+}
+
+// Checkbox toggle slider
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #ccc;
+	transition: 0.4s;
+
+	&::before {
+		content: '';
+		position: absolute;
+		height: 25px;
+		width: 25px;
+		left: 4px;
+		bottom: 4px;
+		background-color: #fff;
+		transition: 0.4s;
+	}
+
+	&.round {
+		border-radius: 2.125rem;
+
+		&::before {
+			border-radius: 50%;
+		}
+	}
+}
+
+input:checked + .slider {
+	background: #2196f3;
+}
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider::before {
+	transform: translateX(1.9rem);
+}
+
+// div + p	Selects the first <p> element that is placed immediately after <div> elements

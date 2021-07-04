@@ -194,4 +194,25 @@ const features = [
 		body: 'Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.',
 	},
 ];
-export { content, stories, features, featuredContent };
+
+const pricing = [
+	{
+		id: 1,
+		title: 'Basic',
+		body: 'Includes basic usage of our platform. Recommended for new and aspiring photographers.',
+		price: 19.0,
+	},
+	{
+		id: 2,
+		title: 'Pro',
+		body: 'More advanced features available. Recommended for photography veterans and professionals.',
+		price: 39.0,
+	},
+	{
+		id: 3,
+		title: 'Business',
+		body: 'Additional features available such as more detailed metrics. Recommended for business owners.',
+		price: 99.0,
+	},
+];
+export { content, stories, features, featuredContent, pricing };

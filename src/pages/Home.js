@@ -93,7 +93,7 @@ const Home = () => {
 			</section>
 
 			<section className="row p-0 m-0 mt-3 features">
-				<FeaturesCard amount={3} />
+				<FeaturesCard amount={3} columns={'col-xl-4'} />
 			</section>
 
 			<Footer />
