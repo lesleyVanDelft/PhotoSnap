@@ -3,7 +3,9 @@ import Navbar from '../components/Navbar/Navbar';
 // import HeroLarge from '../components/HeroLarge/HeroLarge';
 import HeroSmall from '../components/HeroSmall/HeroSmall';
 import HeroXS from '../components/HeroXS/HeroXS';
-import PricingCards from '../components/PricingCards/PricingCards';
+import PricingCards from '../components/PricingCards/PricingToggle/PricingToggle';
+import PriceCard from '../components/PricingCards/PriceCard/PriceCard';
+
 import './Pricing.css';
 
 const Pricing = () => {
@@ -34,13 +36,13 @@ const Pricing = () => {
 				<HeroXS
 					heading={'Pricing'}
 					body={
-						'Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.'
+						'Create your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.'
 					}
 					columns={'col-md-8 col-xl-5'}
 				/>
 			</section>
 
-			<section className="row m-0 p-0">
+			<section className="row pricingContainer">
 				<PricingCards />
 			</section>
 		</main>

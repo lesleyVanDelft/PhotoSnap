@@ -1,7 +1,8 @@
-.subscriptionToggle {
+.pricingToggle {
 	background: #fff;
 	width: 100%;
-
+	margin: 0;
+	margin-bottom: 2.5rem;
 	.checkbox {
 		font-family: 'DM Sans', sans-serif;
 		text-align: center;
@@ -11,9 +12,11 @@
 		padding-top: 3rem;
 
 		&__active {
+			transition: 0.5s;
 		}
 		&__muted {
 			opacity: 0.5;
+			transition: 0.5s;
 		}
 		&__monthly,
 		&__yearly {
@@ -53,7 +56,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #ccc;
+	background: #dfdfdf;
 	transition: 0.4s;
 
 	&::before {
@@ -63,7 +66,7 @@
 		width: 25px;
 		left: 4px;
 		bottom: 4px;
-		background-color: #fff;
+		background-color: #000;
 		transition: 0.4s;
 	}
 
@@ -77,13 +80,12 @@
 }
 
 input:checked + .slider {
-	background: #2196f3;
+	background: #000;
 }
 input:focus + .slider {
-	box-shadow: 0 0 1px #2196f3;
+	box-shadow: 0 0 1px #dfdfdf;
 }
 input:checked + .slider::before {
 	transform: translateX(1.9rem);
+	background: #fff;
 }
-
-// div + p	Selects the first <p> element that is placed immediately after <div> elements
