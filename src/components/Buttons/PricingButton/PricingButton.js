@@ -15,8 +15,8 @@ const PriceButton = styled.button`
 	}
 `;
 
-const PricingButton = ({ children }) => {
-	return <PriceButton>{children}</PriceButton>;
+const PricingButton = ({ children, className }) => {
+	return <PriceButton className={className}>{children}</PriceButton>;
 };
 
 export default PricingButton;

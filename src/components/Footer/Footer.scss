@@ -29,6 +29,12 @@
 		margin-bottom: 1.1875rem;
 	}
 
+	a {
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+	}
+
 	&__logo {
 		margin-bottom: 2rem;
 	}

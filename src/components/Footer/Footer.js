@@ -1,4 +1,5 @@
 import Arrow from '../../components/Arrow';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -34,15 +35,25 @@ const Footer = () => {
 				</div>
 
 				<ul className="Footer__nav">
-					<li>Home</li>
-					<li>Stories</li>
-					<li>Features</li>
-					<li>Pricing</li>
+					<li>
+						<Link to="/">Home</Link>
+					</li>
+					<li>
+						<Link to="/stories">Stories</Link>
+					</li>
+					<li>
+						<Link to="/features">Features</Link>
+					</li>
+					<li>
+						<Link to="/pricing">Pricing</Link>
+					</li>
 				</ul>
 			</div>
 			<div className="Footer__closure">
 				<button>
-					Get an invite <Arrow />{' '}
+					<Link to="/">
+						Get an invite <Arrow />
+					</Link>
 				</button>
 
 				<p>Copyright 2021. All Rights Reserved</p>

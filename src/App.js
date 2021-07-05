@@ -5,7 +5,7 @@ import Stories from './pages/Stories';
 import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 
-function App() {
+const App = () => {
 	return (
 		<Router>
 			<div className="App">
@@ -18,6 +18,6 @@ function App() {
 			</div>
 		</Router>
 	);
-}
+};
 
 export default App;

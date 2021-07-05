@@ -1,10 +1,12 @@
 import { useMediaQuery } from 'react-responsive';
 import Navbar from '../components/Navbar/Navbar';
-// import HeroLarge from '../components/HeroLarge/HeroLarge';
 import HeroSmall from '../components/HeroSmall/HeroSmall';
 import HeroXS from '../components/HeroXS/HeroXS';
 import PricingCards from '../components/PricingCards/PricingToggle/PricingToggle';
-import PriceCard from '../components/PricingCards/PriceCard/PriceCard';
+import Beta from '../components/Beta/Beta';
+import Arrow from '../components/Arrow';
+import Compare from '../components/Compare/Compare';
+import Footer from '../components/Footer/Footer';
 
 import './Pricing.css';
 
@@ -45,6 +47,21 @@ const Pricing = () => {
 			<section className="row pricingContainer">
 				<PricingCards />
 			</section>
+
+			<Compare />
+
+			<Beta
+				src={
+					(smScreens ? '/images/beta/mobile/bg-beta.jpg' : undefined) ||
+					(tabletScreens ? '/images/beta/tablet/bg-beta.jpg' : undefined) ||
+					(desktopScreens ? '/images/beta/desktop/bg-beta.jpg' : undefined)
+				}>
+				<a href="/" className="button">
+					Get and invite <Arrow />
+				</a>
+			</Beta>
+
+			<Footer />
 		</main>
 	);
 };

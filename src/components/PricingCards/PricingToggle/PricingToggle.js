@@ -3,6 +3,7 @@ import PricingButton from '../../Buttons/PricingButton/PricingButton';
 import { Link } from 'react-router-dom';
 import { pricing } from '../../../data';
 import './PricingToggle.css';
+import '../PriceCard/PriceCard.css';
 
 const PricingCards = () => {
 	const [checked, setChecked] = useState(false);
@@ -36,22 +37,24 @@ const PricingCards = () => {
 				</div>
 			</section>
 
-			{pricing.map(priceTier => {
-				return (
-					<article className={`PriceCard col-xl-4`} key={priceTier.id}>
-						<h2>{priceTier.title}</h2>
-						<p>{priceTier.body}</p>
-						<span className="price">
-							{checked
-								? `$${parseFloat(priceTier.price).toFixed(2) * 10}.00`
-								: `$${priceTier.price.toFixed(2)}`}
-						</span>
-						<PricingButton>
-							<Link to="#">Pick plan</Link>
-						</PricingButton>
-					</article>
-				);
-			})}
+			<section className="row cardContainer">
+				{pricing.map(priceTier => {
+					return (
+						<article className={`PriceCard col-xl-3`} key={priceTier.id}>
+							<h2>{priceTier.title}</h2>
+							<p>{priceTier.body}</p>
+							<span className="price">
+								{checked
+									? `$${parseFloat(priceTier.price).toFixed(2) * 10}.00`
+									: `$${priceTier.price.toFixed(2)}`}
+							</span>
+							<PricingButton>
+								<Link to="#">Pick plan</Link>
+							</PricingButton>
+						</article>
+					);
+				})}
+			</section>
 		</>
 	);
 };

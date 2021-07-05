@@ -215,4 +215,70 @@ const pricing = [
 		price: 99.0,
 	},
 ];
-export { content, stories, features, featuredContent, pricing };
+
+const CompareFeatures = [
+	{
+		id: 1,
+		feature: 'Unlimited story posting',
+		basic: true,
+		pro: true,
+		business: true,
+	},
+	{
+		id: 12,
+		feature: 'Unlimited Photo Upload',
+		basic: true,
+		pro: true,
+		business: true,
+	},
+	{
+		id: 15,
+		feature: 'Embedding custom content',
+		basic: false,
+		pro: true,
+		business: true,
+	},
+	{
+		id: 13,
+		feature: 'Customize Metadata',
+		basic: false,
+		pro: true,
+		business: true,
+	},
+	{
+		id: 154,
+		feature: 'Advanced Metrics',
+		basic: false,
+		pro: false,
+		business: true,
+	},
+	{
+		id: 176,
+		feature: 'Photo Downloads',
+		basic: false,
+		pro: false,
+		business: true,
+	},
+	{
+		id: 18,
+		feature: 'Search engine indexing',
+		basic: false,
+		pro: false,
+		business: true,
+	},
+	{
+		id: 11111,
+		feature: 'Custom analytics',
+		basic: false,
+		pro: false,
+		business: true,
+	},
+];
+export {
+	content,
+	stories,
+	features,
+	featuredContent,
+	pricing,
+	CompareFeatures,
+};

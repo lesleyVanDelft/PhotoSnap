@@ -43,7 +43,7 @@ const Features = () => {
 				/>
 			</section>
 
-			<section className="row m-0 p-0">
+			<section className="row featuresContainer">
 				<FeaturesCard amount={6} columns={'col-md-6 col-xl-4'} />
 			</section>
 			<div className="section">
