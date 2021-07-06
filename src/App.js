@@ -5,6 +5,8 @@ import Stories from './pages/Stories';
 import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 
+import TopScroll from './components/TopScroll';
+
 const App = () => {
 	return (
 		<Router>
@@ -15,6 +17,8 @@ const App = () => {
 					<Route path="/features" component={Features} />
 					<Route path="/pricing" component={Pricing}></Route>
 				</Switch>
+
+				<TopScroll />
 			</div>
 		</Router>
 	);

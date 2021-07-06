@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { BlackButton } from '../../styled';
 import logo from '../../assets/logo.svg';
 import hamburger from '../../assets/shared/mobile/menu.svg';
 import close from '../../assets/shared/mobile/close.svg';
@@ -61,7 +62,8 @@ const Navbar = () => {
 						<Link to="/features">Features</Link>
 						<Link to="/pricing">Pricing</Link>
 					</ul>
-					<button className="buttonBlackDesktop">Get an invite</button>
+					{/* <button className="buttonBlackDesktop">Get an invite</button> */}
+					<BlackButton>Get an invite</BlackButton>
 				</nav>
 			)}
 		</>

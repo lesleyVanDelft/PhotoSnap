@@ -1,4 +1,5 @@
 import { stories } from '../../data';
+import { motion } from 'framer-motion';
 import Arrow from '../Arrow';
 import { useMediaQuery } from 'react-responsive';
 import './Card.css';
@@ -19,7 +20,12 @@ const Card = props => {
 
 	return storiesHome.map(story => {
 		return (
-			<article className="Card col-md-6 col-xl-3 offset-md-3" key={story.id}>
+			<motion.article
+				className="Card col-md-6 col-xl-3"
+				key={story.id}
+				whileHover={{
+					y: '-1.1625rem',
+				}}>
 				<div className="Card__content ">
 					<div className="Card__content-text">
 						<h2 className="Card__title">{story.title}</h2>
@@ -42,7 +48,7 @@ const Card = props => {
 						alt=""
 					/>
 				</figure>
-			</article>
+			</motion.article>
 		);
 	});
 };
