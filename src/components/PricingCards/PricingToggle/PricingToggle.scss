@@ -40,12 +40,13 @@
 	// margin: 0 3rem;
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	article:nth-child(2) {
 		background-color: #000;
 		color: #fff;
 		position: relative;
+		padding: 4.5rem 0rem;
 
 		.price {
 			color: #fff;
@@ -136,3 +137,9 @@ input:checked + .slider::before {
 // 	// 	}
 // 	}
 // }
+
+@media screen and (min-width: 1200px) {
+	.pricingToggle {
+		margin-top: 3.5rem;
+	}
+}

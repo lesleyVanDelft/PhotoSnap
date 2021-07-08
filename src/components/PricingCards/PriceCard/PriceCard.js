@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { pricing } from '../../../data';
-import PricingButton from '../../Buttons/PricingButton/PricingButton';
+// import PricingButton from '../../Buttons/PricingButton/PricingButton';
+import ButtonBlack from '../../Buttons/StyledButtons/ButtonBlack';
 import './PriceCard.css';
 
 const PriceCard = ({ color }) => {
@@ -10,9 +11,9 @@ const PriceCard = ({ color }) => {
 				<h2>{priceTier.title}</h2>
 				<p>{priceTier.body}</p>
 				<span className="price">{`$${priceTier.price.toFixed(2)}`}</span>
-				<PricingButton>
+				<ButtonBlack>
 					<Link to="#">Pick plan</Link>
-				</PricingButton>
+				</ButtonBlack>
 			</article>
 		);
 	});

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BlackButton } from '../../styled';
+import ButtonBlack from '../Buttons/StyledButtons/ButtonBlack';
 import logo from '../../assets/logo.svg';
 import hamburger from '../../assets/shared/mobile/menu.svg';
 import close from '../../assets/shared/mobile/close.svg';
@@ -53,17 +53,23 @@ const Navbar = () => {
 				<nav className="navbar navbar-desktop">
 					<figure className="logo">
 						<Link to="/">
-							<img src={logo} alt="" />
+							<img src={logo} alt="PhotoSnap logo" />
 						</Link>
 					</figure>
 
 					<ul className="navbar-desktop__list">
-						<Link to="/stories">Stories</Link>
-						<Link to="/features">Features</Link>
-						<Link to="/pricing">Pricing</Link>
+						<li>
+							<Link to="/stories">Stories</Link>
+						</li>
+						<li>
+							<Link to="/features">Features</Link>
+						</li>
+						<li>
+							<Link to="/pricing">Pricing</Link>
+						</li>
 					</ul>
 					{/* <button className="buttonBlackDesktop">Get an invite</button> */}
-					<BlackButton>Get an invite</BlackButton>
+					<ButtonBlack>Get an invite</ButtonBlack>
 				</nav>
 			)}
 		</>

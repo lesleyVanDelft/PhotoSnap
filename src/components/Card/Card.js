@@ -1,8 +1,29 @@
 import { stories } from '../../data';
 import { motion } from 'framer-motion';
 import Arrow from '../Arrow';
+import styled from 'styled-components';
+import ButtonLink from '../Buttons/StyledButtons/ButtonLink';
 import { useMediaQuery } from 'react-responsive';
 import './Card.css';
+
+const BtnContainer = styled.div`
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+`;
+
+const ButtonCard = styled(ButtonLink)`
+	align-self: flex-start;
+	background: none;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+`;
 
 const Card = props => {
 	const storiesHome = stories.slice(0, `${props.amount}`);
@@ -32,10 +53,16 @@ const Card = props => {
 						<p className="Card__author">by {story.author}</p>
 					</div>
 
-					<div className="button">
-						<button className="btnTransparentWhite">Read Story</button>
-						<Arrow />
-					</div>
+					{/* <div className="button">
+						<ButtonLink href={'/'}>
+							Get an invite <Arrow />
+						</ButtonLink>
+					</div> */}
+					<BtnContainer>
+						<ButtonCard href={'/'}>
+							Read story <Arrow />
+						</ButtonCard>
+					</BtnContainer>
 				</div>
 
 				<figure className="Card__image">

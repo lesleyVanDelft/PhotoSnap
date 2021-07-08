@@ -12,6 +12,7 @@
 	position: relative;
 	transition: 0.5s all ease-in-out;
 	flex-wrap: nowrap;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .logo {
@@ -19,6 +20,11 @@
 	padding: 0;
 	display: flex;
 	align-items: center;
+
+	img {
+		width: 10.625rem;
+		height: 1rem;
+	}
 }
 
 .navbar-desktop {
@@ -27,13 +33,13 @@
 		align-items: center;
 		justify-content: space-between;
 		list-style-type: none;
-		font-weight: bold;
+		font-weight: bolder;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		margin: 0;
 		font-size: 0.75rem;
 		a {
-			margin-right: 2.3125rem;
+			margin-right: 2.6125rem;
 			color: inherit;
 			text-decoration: none;
 

@@ -23,8 +23,8 @@ const PricingCards = () => {
 						Monthly
 					</span>
 					{/* checkbox toggle */}
-					<label className="switch" onChange={handleClick}>
-						<input type="checkbox" className="checkboxToggle" />
+					<label className="switch" onChange={handleClick} htmlFor="toggler">
+						<input type="checkbox" className="checkboxToggle" id="toggler" />
 						<span className="slider round"></span>
 					</label>
 					<span

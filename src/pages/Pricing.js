@@ -51,7 +51,7 @@ const Pricing = () => {
 			<Compare />
 
 			<Beta
-				src={
+				imgsrc={
 					(smScreens ? '/images/beta/mobile/bg-beta.jpg' : undefined) ||
 					(tabletScreens ? '/images/beta/tablet/bg-beta.jpg' : undefined) ||
 					(desktopScreens ? '/images/beta/desktop/bg-beta.jpg' : undefined)

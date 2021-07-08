@@ -1,18 +1,18 @@
 import './Beta.css';
 import Arrow from '../Arrow';
-import { Link } from 'react-router-dom';
+import ButtonLink from '../Buttons/StyledButtons/ButtonLink';
 
-const Beta = ({ src, children }) => {
+const Beta = ({ imgsrc, children }) => {
 	return (
 		<section className="Beta">
 			<figure className="Beta__image">
-				<img src={src} alt="" />
+				<img src={imgsrc} alt="" />
 			</figure>
 			<div className="Beta__content">
 				<h2>We’re in beta. Get your invite today!</h2>
-				<button className="generalButton">
-					<Link to="/">Get an invite</Link> <Arrow />
-				</button>
+				<ButtonLink>
+					Get an invite <Arrow />
+				</ButtonLink>
 			</div>
 		</section>
 	);

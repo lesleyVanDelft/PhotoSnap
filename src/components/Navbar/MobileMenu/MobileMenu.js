@@ -1,9 +1,10 @@
 import './MobileMenu.css';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { BlackButton } from '../../../styled';
+// import { BlackButton } from '../../../styled';
+import ButtonBlack from '../../Buttons/StyledButtons/ButtonBlack';
 
-const MobileButton = styled(BlackButton)`
+const MobileButton = styled(ButtonBlack)`
 	align-self: center;
 	width: 85%;
 	border: none;
@@ -15,6 +16,10 @@ const MobileButton = styled(BlackButton)`
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2.5px;
+
+	&:focus {
+		outline: red;
+	}
 `;
 
 const MobileMenu = props => {

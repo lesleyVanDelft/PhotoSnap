@@ -3,13 +3,17 @@ import HeroSmall from '../components/HeroSmall/HeroSmall';
 import HeroLarge from '../components/HeroLarge/HeroLarge';
 import { content } from '../data';
 import Arrow from '../components/Arrow';
+// import styled from 'styled-components';
 import ArrowBlack from '../components/ArrowBlack';
+import ButtonLink from '../components/Buttons/StyledButtons/ButtonLink';
 import Card from '../components/Card/Card';
 import FeaturesCard from '../components/FeaturesCard/FeaturesCard';
 import Footer from '../components/Footer/Footer';
 
 import { useMediaQuery } from 'react-responsive';
 import './Home.css';
+
+// const Section = styled.section``;
 
 const Home = () => {
 	// React media queries
@@ -27,6 +31,7 @@ const Home = () => {
 	return (
 		<main className="homepage">
 			<Navbar />
+
 			<section className="row m-0 p-0 flex-row-reverse">
 				<HeroSmall
 					src={
@@ -36,13 +41,13 @@ const Home = () => {
 					}
 					columns="col-md-4 col-xl-7"
 				/>
-
 				<HeroLarge
 					heading={content.content1.title}
 					body={content.content1.body}
 					columns="col-md-8 col-xl-5">
-					<a href="/">Get an invite</a>
-					<Arrow />
+					<ButtonLink href={'/stories'}>
+						Get an invite <Arrow />
+					</ButtonLink>
 				</HeroLarge>
 			</section>
 
@@ -61,8 +66,9 @@ const Home = () => {
 					heading={content.content2.title}
 					body={content.content2.body}
 					columns={'col-md-8 col-xl-5'}>
-					<a href="/">Get an invite</a>
-					<ArrowBlack />
+					<ButtonLink href={'/'} colorblack="true">
+						Get an invite <ArrowBlack />
+					</ButtonLink>
 				</HeroLarge>
 			</section>
 
@@ -83,8 +89,9 @@ const Home = () => {
 					heading={content.content3.title}
 					body={content.content3.body}
 					columns={'col-md-8 col-xl-5'}>
-					<a href="/">Get an invite</a>
-					<ArrowBlack />
+					<ButtonLink href={'/'} colorblack="true">
+						Get an invite <ArrowBlack />
+					</ButtonLink>
 				</HeroLarge>
 			</section>
 

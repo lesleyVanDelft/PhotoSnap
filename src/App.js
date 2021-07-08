@@ -6,6 +6,7 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 
 import TopScroll from './components/TopScroll';
+import TopScrollReset from './components/TopScrollReset';
 
 const App = () => {
 	return (
@@ -19,6 +20,7 @@ const App = () => {
 				</Switch>
 
 				<TopScroll />
+				<TopScrollReset />
 			</div>
 		</Router>
 	);

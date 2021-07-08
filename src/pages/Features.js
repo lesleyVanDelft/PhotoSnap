@@ -48,7 +48,7 @@ const Features = () => {
 			</section>
 			<div className="section">
 				<Beta
-					src={
+					imgsrc={
 						(smScreens && '/images/beta/mobile/bg-beta.jpg') ||
 						(tabletScreens && '/images/beta/tablet/bg-beta.jpg') ||
 						(desktopScreens && '/images/beta/desktop/bg-beta.jpg')

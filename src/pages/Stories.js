@@ -10,6 +10,7 @@ import Footer from '../components/Footer/Footer';
 
 import { featuredContent } from '../data';
 import Arrow from '../components/Arrow';
+import ButtonLink from '../components/Buttons/StyledButtons/ButtonLink';
 
 const Stories = () => {
 	// React media queries
@@ -38,7 +39,7 @@ const Stories = () => {
 						date={featuredContent.featuredContent1.date}
 						author={featuredContent.featuredContent1.author}
 						image={tabletScreens && '/images/storiesTablet/1.jpg'}>
-						<a href="/">Read the story</a>
+						<ButtonLink>Read the story </ButtonLink>
 						<Arrow />
 					</HeroLarge>
 				</section>

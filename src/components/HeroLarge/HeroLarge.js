@@ -1,5 +1,4 @@
 import './HeroLarge.css';
-import { Button } from '../Buttons/Button';
 
 const HeroLarge = ({
 	children,
@@ -8,19 +7,15 @@ const HeroLarge = ({
 	classColor,
 	columns,
 	topText,
-	date,
-	author,
 }) => {
 	return (
 		<div className={`heroLarge ${classColor} ${columns}`}>
 			<div className="content">
 				<h6 className="heroLarge__topText">{topText}</h6>
 				<h2 className="heroLarge__heading">{heading}</h2>
-				<p className="heroLarge__date">
-					{date} {date && 'by'} <span className="author">{author}</span>
-				</p>
+
 				<p className="heroLarge__content">{body}</p>
-				<Button>{children}</Button>
+				{children}
 			</div>
 		</div>
 	);

@@ -1,6 +1,8 @@
 import { featuredContent } from '../../data';
+// import StyledLink from '../Buttons/StyledButtons/ButtonLink'
 import { useMediaQuery } from 'react-responsive';
 import Arrow from '../Arrow';
+import ButtonLink from '../Buttons/StyledButtons/ButtonLink';
 import './FeaturedStory.css';
 
 const FeaturedStory = () => {
@@ -42,8 +44,7 @@ const FeaturedStory = () => {
 					{featuredContent.featuredContent1.body}
 				</p>
 				<div className="button">
-					<a href="/">Read the story</a>
-					<Arrow />
+					<ButtonLink>Read the story</ButtonLink> <Arrow />
 				</div>
 			</div>
 		</article>
