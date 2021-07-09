@@ -1,23 +1,29 @@
-import './HeroLarge.css';
+/*Styled components */
+import {
+	Heading2,
+	Heading6,
+	Paragraph,
+} from '../StyledComponents/StyledComponents.style';
+import { HeroLargeContainer, Content } from './HeroLarge.style';
 
 const HeroLarge = ({
-	children,
-	heading,
 	body,
+	children,
 	classColor,
 	columns,
+	heading,
 	topText,
 }) => {
 	return (
-		<div className={`heroLarge ${classColor} ${columns}`}>
-			<div className="content">
-				<h6 className="heroLarge__topText">{topText}</h6>
-				<h2 className="heroLarge__heading">{heading}</h2>
+		<HeroLargeContainer className={`${columns} ${classColor}`}>
+			<Content>
+				<Heading6>{topText}</Heading6>
+				<Heading2>{heading}</Heading2>
 
-				<p className="heroLarge__content">{body}</p>
+				<Paragraph>{body}</Paragraph>
 				{children}
-			</div>
-		</div>
+			</Content>
+		</HeroLargeContainer>
 	);
 };
 

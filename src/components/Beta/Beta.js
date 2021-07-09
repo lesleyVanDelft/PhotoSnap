@@ -6,7 +6,7 @@ const Beta = ({ imgsrc, children }) => {
 	return (
 		<section className="Beta">
 			<figure className="Beta__image">
-				<img src={imgsrc} alt="" />
+				<img src={imgsrc ? imgsrc : undefined} alt="" />
 			</figure>
 			<div className="Beta__content">
 				<h2>We’re in beta. Get your invite today!</h2>

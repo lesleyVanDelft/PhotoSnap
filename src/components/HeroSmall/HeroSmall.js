@@ -1,4 +1,5 @@
 import './HeroSmall.css';
+
 const HeroSmall = ({ columns, src }) => {
 	return (
 		<figure className={`heroSmall ${columns}`}>

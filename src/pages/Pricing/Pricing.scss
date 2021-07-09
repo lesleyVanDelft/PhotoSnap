@@ -1,0 +1,17 @@
+.pricingContainer {
+	padding: 0rem 2rem;
+	margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+	.pricingContainer {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.pricingContainer {
+		flex-direction: row;
+	}
+}

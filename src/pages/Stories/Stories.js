@@ -1,16 +1,14 @@
 import './Stories.css';
 import { useMediaQuery } from 'react-responsive';
-// import { useState } from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import HeroSmall from '../components/HeroSmall/HeroSmall';
-import HeroLarge from '../components/HeroLarge/HeroLarge';
-import Card from '../components/Card/Card';
-import FeaturedStory from '../components/FeaturedStory/FeaturedStory';
-import Footer from '../components/Footer/Footer';
+import HeroSmall from '../../components/HeroSmall/HeroSmall';
+import HeroLarge from '../../components/HeroLarge/HeroLarge';
+import Card from '../../components/Card/Card';
+import FeaturedStory from '../../components/FeaturedStory/FeaturedStory';
+import Footer from '../../components/Footer/Footer';
 
-import { featuredContent } from '../data';
-import Arrow from '../components/Arrow';
-import ButtonLink from '../components/Buttons/StyledButtons/ButtonLink';
+import { featuredContent } from '../../data';
+import Arrow from '../../components/Arrow';
+import ButtonLink from '../../components/Buttons/StyledButtons/ButtonLink';
 
 const Stories = () => {
 	// React media queries
@@ -27,8 +25,6 @@ const Stories = () => {
 
 	return (
 		<main className="stories">
-			<Navbar />
-
 			{smScreens && (
 				<section className="row m-0 p-0">
 					<HeroSmall src={'/images/storiesMobile/17.jpg'} />

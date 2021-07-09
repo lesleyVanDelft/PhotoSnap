@@ -1,7 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
 import {
-	Heading2,
-	Heading4,
 	Container,
 	ContainerTop,
 	CheckmarkContainer,
@@ -10,6 +8,8 @@ import {
 	TierSpanDesktop,
 	CheckMark,
 } from './Compare.style';
+import { Heading2, Heading4 } from '../StyledComponents/StyledComponents.style';
+
 import { CompareFeatures } from '../../data';
 import Check from '../../assets/pricing/desktop/check.svg';
 import './Compare.css';
@@ -22,7 +22,11 @@ const Compare = () => {
 	return (
 		<div className="CompareContainer">
 			{/*Price tiers visible on tablet or higher */}
-			{smScreens || <Heading2>COMPARE</Heading2>}
+			{smScreens || (
+				<Heading2 black center>
+					COMPARE
+				</Heading2>
+			)}
 			<ContainerTop>
 				<Heading4>The Features</Heading4>
 

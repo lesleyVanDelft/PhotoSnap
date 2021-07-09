@@ -10,7 +10,6 @@ const TopScrollReset = ({ history }) => {
 			unlisten();
 		};
 	}, [history]);
-	console.log(history);
 	return null;
 };
 

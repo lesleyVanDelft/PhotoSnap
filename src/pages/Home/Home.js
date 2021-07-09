@@ -1,14 +1,13 @@
-import Navbar from '../components/Navbar/Navbar';
-import HeroSmall from '../components/HeroSmall/HeroSmall';
-import HeroLarge from '../components/HeroLarge/HeroLarge';
-import { content } from '../data';
-import Arrow from '../components/Arrow';
+import HeroSmall from '../../components/HeroSmall/HeroSmall';
+import HeroLarge from '../../components/HeroLarge/HeroLarge';
+import { content } from '../../data';
+import Arrow from '../../components/Arrow';
 // import styled from 'styled-components';
-import ArrowBlack from '../components/ArrowBlack';
-import ButtonLink from '../components/Buttons/StyledButtons/ButtonLink';
-import Card from '../components/Card/Card';
-import FeaturesCard from '../components/FeaturesCard/FeaturesCard';
-import Footer from '../components/Footer/Footer';
+import ArrowBlack from '../../components/ArrowBlack';
+import ButtonLink from '../../components/Buttons/StyledButtons/ButtonLink';
+import Card from '../../components/Card/Card';
+import FeaturesCard from '../../components/FeaturesCard/FeaturesCard';
+import Footer from '../../components/Footer/Footer';
 
 import { useMediaQuery } from 'react-responsive';
 import './Home.css';
@@ -30,8 +29,6 @@ const Home = () => {
 
 	return (
 		<main className="homepage">
-			<Navbar />
-
 			<section className="row m-0 p-0 flex-row-reverse">
 				<HeroSmall
 					src={

@@ -1,5 +1,4 @@
 import { featuredContent } from '../../data';
-// import StyledLink from '../Buttons/StyledButtons/ButtonLink'
 import { useMediaQuery } from 'react-responsive';
 import Arrow from '../Arrow';
 import ButtonLink from '../Buttons/StyledButtons/ButtonLink';

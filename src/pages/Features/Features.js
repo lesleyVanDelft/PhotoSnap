@@ -1,11 +1,10 @@
 import { useMediaQuery } from 'react-responsive';
-import Navbar from '../components/Navbar/Navbar';
-import HeroXS from '../components/HeroXS/HeroXS';
-import HeroSmall from '../components/HeroSmall/HeroSmall';
-import FeaturesCard from '../components/FeaturesCard/FeaturesCard';
-import Beta from '../components/Beta/Beta';
-import Arrow from '../components/Arrow';
-import Footer from '../components/Footer/Footer';
+import HeroXS from '../../components/HeroXS/HeroXS';
+import HeroSmall from '../../components/HeroSmall/HeroSmall';
+import FeaturesCard from '../../components/FeaturesCard/FeaturesCard';
+import Beta from '../../components/Beta/Beta';
+import Arrow from '../../components/Arrow';
+import Footer from '../../components/Footer/Footer';
 import './Features.css';
 
 const Features = () => {
@@ -23,8 +22,6 @@ const Features = () => {
 
 	return (
 		<main className="features">
-			<Navbar />
-
 			<section className="row m-0 p-0 flex-row-reverse">
 				<HeroSmall
 					src={

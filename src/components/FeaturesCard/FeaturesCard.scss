@@ -1,6 +1,5 @@
 .FeaturesCard {
 	min-height: 14.75rem;
-	// width;
 	background-color: #fff;
 	font-family: 'DM Sans', sans-serif;
 	display: flex;
@@ -10,7 +9,7 @@
 		height: 100%;
 		width: 100%;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-end;
 		align-items: center;
 		text-align: center;
 		padding: 1.5rem 2.5rem;
@@ -35,9 +34,9 @@
 @media screen and (min-width: 768px) {
 	.FeaturesCard {
 		&__content {
-			p {
-				max-width: 45%;
-			}
+			// p {
+			// 	max-width: 45%;
+			// }
 		}
 	}
 }
@@ -46,16 +45,14 @@
 	.FeaturesCard {
 		padding: 2rem 0rem;
 
-		&:first-of-type {
-			margin-top: 0rem;
-		}
 		&__content {
 			display: flex;
 			align-items: center;
-			justify-content: center;
-
+			justify-content: flex-end;
+			padding: 0 3rem;
+			flex: 33%;
 			p {
-				max-width: 100%;
+				max-width: 90%;
 			}
 		}
 	}

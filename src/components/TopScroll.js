@@ -13,6 +13,10 @@ const Button = styled.div`
 	cursor: pointer;
 	color: #dddddd;
 	opacity: 0.9;
+
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
 `;
 
 const TopScroll = () => {

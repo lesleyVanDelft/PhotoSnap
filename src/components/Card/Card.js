@@ -1,9 +1,10 @@
-import { stories } from '../../data';
-import { motion } from 'framer-motion';
-import Arrow from '../Arrow';
-import styled from 'styled-components';
-import ButtonLink from '../Buttons/StyledButtons/ButtonLink';
 import { useMediaQuery } from 'react-responsive';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
+import { stories } from '../../data';
+import Arrow from '../Arrow';
+import ButtonLink from '../Buttons/StyledButtons/ButtonLink';
 import './Card.css';
 
 const BtnContainer = styled.div`

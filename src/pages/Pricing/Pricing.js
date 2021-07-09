@@ -1,12 +1,11 @@
 import { useMediaQuery } from 'react-responsive';
-import Navbar from '../components/Navbar/Navbar';
-import HeroSmall from '../components/HeroSmall/HeroSmall';
-import HeroXS from '../components/HeroXS/HeroXS';
-import PricingCards from '../components/PricingCards/PricingToggle/PricingToggle';
-import Beta from '../components/Beta/Beta';
-import Arrow from '../components/Arrow';
-import Compare from '../components/Compare/Compare';
-import Footer from '../components/Footer/Footer';
+import HeroSmall from '../../components/HeroSmall/HeroSmall';
+import HeroXS from '../../components/HeroXS/HeroXS';
+import PricingCards from '../../components/PricingCards/PricingToggle/PricingToggle';
+import Beta from '../../components/Beta/Beta';
+import Arrow from '../../components/Arrow';
+import Compare from '../../components/Compare/Compare';
+import Footer from '../../components/Footer/Footer';
 
 import './Pricing.css';
 
@@ -25,7 +24,6 @@ const Pricing = () => {
 
 	return (
 		<main className="pricing">
-			<Navbar />
 			<section className="row m-0 p-0 flex-row-reverse">
 				<HeroSmall
 					src={

@@ -1,27 +1,4 @@
 import styled from 'styled-components';
-const Heading2 = styled.h2`
-	font-size: 2.5rem;
-	font-weight: bold;
-	font-family: 'DM Sans', sans-serif;
-	letter-spacing: 0.2606rem;
-	text-transform: uppercase;
-	line-height: 3rem;
-	text-align: center;
-`;
-
-const Heading4 = styled.h4`
-	font-size: 12px;
-	font-weight: bold;
-	letter-spacing: 2px;
-	font-family: 'DM Sans';
-	text-transform: uppercase;
-	color: #000;
-	flex: 40%;
-
-	@media screen and (min-width: 768px) {
-		/* margin: 0; */
-	}
-`;
 
 const Container = styled.div`
 	width: 80%;
@@ -106,8 +83,6 @@ CheckMark.defaultProps = {
 };
 
 export {
-	Heading2,
-	Heading4,
 	Container,
 	ContainerTop,
 	CheckmarkContainer,

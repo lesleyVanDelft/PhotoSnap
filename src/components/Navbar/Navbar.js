@@ -1,12 +1,19 @@
+/* React imports */
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ButtonBlack from '../Buttons/StyledButtons/ButtonBlack';
+import { useMediaQuery } from 'react-responsive';
+
+/* SVG imports*/
 import logo from '../../assets/logo.svg';
 import hamburger from '../../assets/shared/mobile/menu.svg';
 import close from '../../assets/shared/mobile/close.svg';
-import './Navbar.css';
+
+/* Styled imports */
+import { NavbarDesktop, NavbarMobile, UlDesktop } from './Navbar.style';
+import ButtonBlack from '../Buttons/StyledButtons/ButtonBlack';
+
+/*Component imports */
 import MobileMenu from './MobileMenu/MobileMenu';
-import { useMediaQuery } from 'react-responsive';
 
 const Navbar = () => {
 	// handle mobile menu toggle
@@ -26,7 +33,7 @@ const Navbar = () => {
 	return (
 		<>
 			{smScreens && (
-				<nav className="navbar navbar-mobile">
+				<NavbarMobile>
 					<figure className="logo">
 						<Link to="/">
 							<img src={logo} alt="" />
@@ -46,18 +53,18 @@ const Navbar = () => {
 					)}
 
 					{isOpen === true ? <MobileMenu /> : null}
-				</nav>
+				</NavbarMobile>
 			)}
 
 			{bigScreens && (
-				<nav className="navbar navbar-desktop">
+				<NavbarDesktop>
 					<figure className="logo">
 						<Link to="/">
 							<img src={logo} alt="PhotoSnap logo" />
 						</Link>
 					</figure>
 
-					<ul className="navbar-desktop__list">
+					<UlDesktop>
 						<li>
 							<Link to="/stories">Stories</Link>
 						</li>
@@ -67,10 +74,9 @@ const Navbar = () => {
 						<li>
 							<Link to="/pricing">Pricing</Link>
 						</li>
-					</ul>
-					{/* <button className="buttonBlackDesktop">Get an invite</button> */}
+					</UlDesktop>
 					<ButtonBlack>Get an invite</ButtonBlack>
-				</nav>
+				</NavbarDesktop>
 			)}
 		</>
 	);

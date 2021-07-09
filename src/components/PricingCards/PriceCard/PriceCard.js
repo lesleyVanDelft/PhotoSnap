@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 import { pricing } from '../../../data';
-// import PricingButton from '../../Buttons/PricingButton/PricingButton';
 import ButtonBlack from '../../Buttons/StyledButtons/ButtonBlack';
 import './PriceCard.css';
 
-const PriceCard = ({ color }) => {
+const PriceCard = () => {
 	return pricing.map(priceTier => {
 		return (
 			<article className={`PriceCard col-xl-4`} key={priceTier.id}>
