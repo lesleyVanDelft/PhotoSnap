@@ -5,8 +5,8 @@ import FeaturesCard from '../../components/FeaturesCard/FeaturesCard';
 import Beta from '../../components/Beta/Beta';
 import Arrow from '../../components/Arrow';
 import Footer from '../../components/Footer/Footer';
-import { motion } from 'framer-motion';
 import './Features.css';
+import { motion } from 'framer-motion';
 
 const Features = () => {
 	// React media queries
