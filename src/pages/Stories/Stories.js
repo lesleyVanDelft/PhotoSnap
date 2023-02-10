@@ -9,6 +9,7 @@ import Footer from '../../components/Footer/Footer';
 import { featuredContent } from '../../data';
 import Arrow from '../../components/Arrow';
 import ButtonLink from '../../components/Buttons/StyledButtons/ButtonLink';
+import { motion } from 'framer-motion';
 
 const Stories = () => {
 	// React media queries
@@ -22,9 +23,23 @@ const Stories = () => {
 	const smScreens = useMediaQuery({
 		maxWidth: 768,
 	});
-
+	const variants = {
+		hidden: {
+			opacity: 0,
+		},
+		show: {
+			opacity: 1,
+			transition: {
+				duration: 0.75,
+			},
+		},
+	};
 	return (
-		<main className="stories">
+		<motion.main
+			className="stories"
+			variants={variants}
+			initial={'hidden'}
+			animate={'show'}>
 			{smScreens && (
 				<section className="row m-0 p-0">
 					<HeroSmall src={'/images/storiesMobile/17.jpg'} />
@@ -49,7 +64,7 @@ const Stories = () => {
 			</section>
 
 			<Footer />
-		</main>
+		</motion.main>
 	);
 };
 

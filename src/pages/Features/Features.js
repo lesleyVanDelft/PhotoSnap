@@ -5,6 +5,7 @@ import FeaturesCard from '../../components/FeaturesCard/FeaturesCard';
 import Beta from '../../components/Beta/Beta';
 import Arrow from '../../components/Arrow';
 import Footer from '../../components/Footer/Footer';
+import { motion } from 'framer-motion';
 import './Features.css';
 
 const Features = () => {
@@ -20,8 +21,24 @@ const Features = () => {
 		maxWidth: 768,
 	});
 
+	const variants = {
+		hidden: {
+			opacity: 0,
+		},
+		show: {
+			opacity: 1,
+			transition: {
+				duration: 0.75,
+			},
+		},
+	};
+
 	return (
-		<main className="features">
+		<motion.main
+			className="features"
+			variants={variants}
+			initial={'hidden'}
+			animate={'show'}>
 			<section className="row m-0 p-0 flex-row-reverse">
 				<HeroSmall
 					src={
@@ -56,7 +73,7 @@ const Features = () => {
 				</Beta>
 			</div>
 			<Footer />
-		</main>
+		</motion.main>
 	);
 };
 

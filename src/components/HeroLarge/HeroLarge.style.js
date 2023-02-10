@@ -58,9 +58,7 @@ const HeroLargeContainer = styled.div`
 `;
 
 const Content = styled.div`
-	padding: 0 2.6rem;
-	padding-left: 3.5rem;
-	padding-right: 4.5rem;
+	padding: 0 0rem;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -71,6 +69,9 @@ const Content = styled.div`
 	@media screen and (min-width: 768px) {
 		/* padding-left: 2.0625rem;
 		padding-right: 1rem; */
+		padding: 0 2.6rem;
+		padding-left: 3.5rem;
+		padding-right: 4.5rem;
 	}
 `;
 

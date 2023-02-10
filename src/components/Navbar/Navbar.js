@@ -33,7 +33,7 @@ const Navbar = () => {
 	return (
 		<>
 			{smScreens && (
-				<NavbarMobile>
+				<NavbarMobile onClick={handleClick}>
 					<figure className="logo">
 						<Link to="/">
 							<img src={logo} alt="" />
@@ -52,7 +52,7 @@ const Navbar = () => {
 						</figure>
 					)}
 
-					{isOpen === true ? <MobileMenu /> : null}
+					{isOpen ? <MobileMenu /> : null}
 				</NavbarMobile>
 			)}
 

@@ -8,6 +8,7 @@ import ButtonLink from '../../components/Buttons/StyledButtons/ButtonLink';
 import Card from '../../components/Card/Card';
 import FeaturesCard from '../../components/FeaturesCard/FeaturesCard';
 import Footer from '../../components/Footer/Footer';
+import { motion } from 'framer-motion';
 
 import { useMediaQuery } from 'react-responsive';
 import './Home.css';
@@ -27,8 +28,24 @@ const Home = () => {
 		maxWidth: 768,
 	});
 
+	const variants = {
+		hidden: {
+			opacity: 0,
+		},
+		show: {
+			opacity: 1,
+			transition: {
+				duration: 0.75,
+			},
+		},
+	};
+
 	return (
-		<main className="homepage">
+		<motion.main
+			className="homepage"
+			variants={variants}
+			initial={'hidden'}
+			animate={'show'}>
 			<section className="row m-0 p-0 flex-row-reverse">
 				<HeroSmall
 					src={
@@ -101,7 +118,7 @@ const Home = () => {
 			</section>
 
 			<Footer />
-		</main>
+		</motion.main>
 	);
 };
 

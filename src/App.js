@@ -9,6 +9,8 @@ import Navbar from './components/Navbar/Navbar';
 import TopScroll from './components/TopScroll';
 import TopScrollReset from './components/TopScrollReset';
 
+import { motion } from 'framer-motion';
+
 const App = () => {
 	return (
 		<Router>

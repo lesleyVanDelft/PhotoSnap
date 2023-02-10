@@ -35,6 +35,7 @@ const Heading6 = styled.h6`
 	letter-spacing: 2px;
 	font-weight: bold;
 	line-height: auto;
+	text-transform: uppercase;
 `;
 
 const Paragraph = styled.p`
