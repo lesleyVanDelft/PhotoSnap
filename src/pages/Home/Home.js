@@ -8,7 +8,7 @@ import ButtonLink from '../../components/Buttons/StyledButtons/ButtonLink';
 import Card from '../../components/Card/Card';
 import FeaturesCard from '../../components/FeaturesCard/FeaturesCard';
 import Footer from '../../components/Footer/Footer';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 import { useMediaQuery } from 'react-responsive';
 import './Home.css';

@@ -6,7 +6,7 @@ import Beta from '../../components/Beta/Beta';
 import Arrow from '../../components/Arrow';
 import Compare from '../../components/Compare/Compare';
 import Footer from '../../components/Footer/Footer';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 import './Pricing.css';
 

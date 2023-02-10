@@ -9,7 +9,7 @@ import Footer from '../../components/Footer/Footer';
 import { featuredContent } from '../../data';
 import Arrow from '../../components/Arrow';
 import ButtonLink from '../../components/Buttons/StyledButtons/ButtonLink';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Stories = () => {
 	// React media queries

@@ -6,7 +6,7 @@ import Beta from '../../components/Beta/Beta';
 import Arrow from '../../components/Arrow';
 import Footer from '../../components/Footer/Footer';
 import './Features.css';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion/dist/framer-motion';
 
 const Features = () => {
 	// React media queries
